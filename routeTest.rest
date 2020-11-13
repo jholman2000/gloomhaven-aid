@@ -1,5 +1,30 @@
 GET http://localhost:3000/monsters
 
 ###
-GET http://localhost:3000/monsters/99
+GET http://localhost:3000/monsters/5faef7280a6b5e2d1c6b8413
 
+###
+POST http://localhost:3000/monsters
+Content-Type: application/json
+
+{ "name": "Holman",
+  "level": 2,
+  "imageSrc": "",
+  "normal": {
+    "bonuses": [],
+    "maxHitPoint": 9,
+    "baseMove": 3,
+    "baseAttack": 3
+  },
+  "elite": {
+    "bonuses": [
+      "Wound","Intimidate"
+    ],
+    "maxHitPoint": 11,
+    "baseMove": 4,
+    "baseAttack": 5
+  }
+}  
+
+###
+DELETE http://localhost:3000/monsters/5faf00166f45b42ce85ca244
