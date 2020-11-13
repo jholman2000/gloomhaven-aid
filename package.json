@@ -1,0 +1,28 @@
+{
+  "name": "gloomhaven-aid",
+  "version": "1.0.0",
+  "description": "Gloomhaven Aid ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jholman2000/gloomhaven-aid.git"
+  },
+  "author": "Jeff Holman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jholman2000/gloomhaven-aid/issues"
+  },
+  "homepage": "https://github.com/jholman2000/gloomhaven-aid#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.14"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
+  }
+}
