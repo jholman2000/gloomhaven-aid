@@ -1,5 +1,6 @@
 //const express = require('express');
 import dotenv from "dotenv";
+import cors from "cors";
 import express from "express";
 import mongoose from "mongoose";
 
@@ -20,6 +21,7 @@ db.once("open", () => console.info("Connected to Mongo Atlas"));
 
 // Middleware
 app.use(express.json());
+app.use(cors());
 app.use("/monsters", monsterRouter);
 
-app.listen(3000, () => console.log("Server Started"));
+app.listen(5000, () => console.log("Server Started"));

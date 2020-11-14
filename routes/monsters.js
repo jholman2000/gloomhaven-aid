@@ -27,6 +27,7 @@ async function getMonster(req, res, next) {
 router.get("/", async (req, res) => {
   try {
     const monsters = await Monster.find();
+    console.info("Retrieving all monsters...");
     res.json(monsters);
   } catch (error) {
     res.status(500).json({ message: error.message });
